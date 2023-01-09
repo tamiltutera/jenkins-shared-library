@@ -1,3 +1,3 @@
-def call(String name, String monthOfTheYear) {
-    sh "echo Hello ${name}, current month is ${monthOfTheYear}"
+def call(Map config = [:]) {
+    sh "echo Hello ${config.name}, current month is ${config.monthOfTheYear}"
 }
